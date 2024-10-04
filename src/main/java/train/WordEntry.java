@@ -141,4 +141,23 @@ public class WordEntry {
     public void setNumber(String number) {
         Number = number;
     }
+
+    @Override
+    public String toString() {
+        return "\nWordEntry{" +
+                "ID=" + ID +
+                ", Skill='" + Skill + '\'' +
+                ", Word='" + Word + '\'' +
+                ", Translation='" + Translation + '\'' +
+                ", Type='" + Type + '\'' +
+                ", Niqqud='" + Niqqud + '\'' +
+                ", Transliteration='" + Transliteration + '\'' +
+                ", NewTranslit='" + NewTranslit + '\'' +
+                ", Gender='" + Gender + '\'' +
+                ", Form='" + Form + '\'' +
+                ", Number='" + Number + '\'' +
+                ", HasShva=" + HasShva +
+                ", Process='" + Process + '\'' +
+                '}';
+    }
 }

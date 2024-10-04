@@ -19,4 +19,11 @@ public class WordData {
     public void setEntries(List<WordEntry> entries) {
         this.entries = entries;
     }
+
+    @Override
+    public String toString() {
+        return "WordData{" +
+                "entries=" + entries +
+                '}';
+    }
 }

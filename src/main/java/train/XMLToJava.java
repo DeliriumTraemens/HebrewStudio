@@ -25,7 +25,7 @@ public class XMLToJava {
 //            HebrewWord word = (HebrewWord) unmarshaller.unmarshal(xmlFile);
 
             // Вывод данных
-//            System.out.println(unmarshal.toString());
+            System.out.println(word.toString());
 //            System.out.println(unmarshaller.unmarshal(xmlFile).toString());
         } catch (JAXBException e) {
             e.printStackTrace();
