@@ -21,8 +21,7 @@ public class XMLReader {
             document.getDocumentElement().normalize();
 
             // Получаем элементы по имени тега
-//            NodeList nodeList = document.getElementsByTagName("Row");  // Предполагается, что строки Excel будут в тегах <Row>
-            NodeList nodeList = document.getElementsByTagName("WordEntry");  // Предполагается, что строки Excel будут в тегах <Row>
+            NodeList nodeList = document.getElementsByTagName("WordEntry");  // Предполагается, что строки Excel будут в тегах <WordEntry>
 
             // Проход по каждому элементу
             for (int i = 0; i < nodeList.getLength(); i++) {

@@ -19,13 +19,13 @@ public class XMLToJava {
 //            File xmlFile = new File("E:/Docs/xmlwords.xml");
             File xmlFile = new File("E:/Docs/sample3.xml");
 
-            Object unmarshal = unmarshaller.unmarshal(xmlFile);
+//            Object unmarshal = unmarshaller.unmarshal(xmlFile);
 
-//            WordData word = (WordData) unmarshaller.unmarshal(xmlFile);
+            WordData word = (WordData) unmarshaller.unmarshal(xmlFile);
 //            HebrewWord word = (HebrewWord) unmarshaller.unmarshal(xmlFile);
 
             // Вывод данных
-            System.out.println(unmarshal.toString());
+//            System.out.println(unmarshal.toString());
 //            System.out.println(unmarshaller.unmarshal(xmlFile).toString());
         } catch (JAXBException e) {
             e.printStackTrace();
