@@ -14,8 +14,8 @@ public class WordEntry {
     private String Transliteration;
     private String NewTranslit;
     private String Gender;
-    //    private String Form;
-//    private String Number;
+        private String Form;
+    private String Number;
     private boolean HasShva;
     private String Process;
 //    private String Notes;
@@ -25,7 +25,7 @@ public class WordEntry {
     }
 
     // Getters и Setters с аннотациями @XmlElement для каждого поля
-    @XmlElement
+    @XmlElement(name="ID")
     public int getID() {
         return ID;
     }
@@ -34,7 +34,7 @@ public class WordEntry {
         this.ID = ID;
     }
 
-    @XmlElement
+    @XmlElement(name="Skill")
     public String getSkill() {
         return Skill;
     }
@@ -43,7 +43,7 @@ public class WordEntry {
         this.Skill = Skill;
     }
 
-    @XmlElement
+    @XmlElement(name="Word")
     public String getWord() {
         return Word;
     }
@@ -52,7 +52,7 @@ public class WordEntry {
         Word = word;
     }
 
-    @XmlElement
+    @XmlElement(name="Translation")
     public String getTranslation() {
         return Translation;
     }
@@ -61,7 +61,7 @@ public class WordEntry {
         Translation = translation;
     }
 
-    @XmlElement
+    @XmlElement(name="Type")
     public String getType() {
         return Type;
     }
@@ -70,7 +70,7 @@ public class WordEntry {
         Type = type;
     }
 
-    @XmlElement
+    @XmlElement(name="Nikkud")
     public String getNiqqud() {
         return Niqqud;
     }
@@ -79,7 +79,7 @@ public class WordEntry {
         Niqqud = niqqud;
     }
 
-    @XmlElement
+    @XmlElement(name="Transliteration")
     public String getTransliteration() {
         return Transliteration;
     }
@@ -88,7 +88,7 @@ public class WordEntry {
         Transliteration = transliteration;
     }
 
-    @XmlElement
+    @XmlElement(name="NewTranslit")
     public String getNewTranslit() {
         return NewTranslit;
     }
@@ -97,7 +97,7 @@ public class WordEntry {
         NewTranslit = newTranslit;
     }
 
-    @XmlElement
+    @XmlElement(name="Gender")
     public String getGender() {
         return Gender;
     }
@@ -106,7 +106,7 @@ public class WordEntry {
         Gender = gender;
     }
 
-    @XmlElement
+    @XmlElement(name="HasShva")
     public boolean isHasShva() {
         return HasShva;
     }
@@ -115,7 +115,7 @@ public class WordEntry {
         HasShva = hasShva;
     }
 
-    @XmlElement
+    @XmlElement(name="process")
     public String getProcess() {
         return Process;
     }
@@ -124,4 +124,21 @@ public class WordEntry {
         Process = process;
     }
 // Аналогично для остальных полей
+
+    @XmlElement(name="Form")
+    public String getForm() {
+        return Form;
+    }
+
+    public void setForm(String form) {
+        Form = form;
+    }
+    @XmlElement(name="Number")
+    public String getNumber() {
+        return Number;
+    }
+
+    public void setNumber(String number) {
+        Number = number;
+    }
 }

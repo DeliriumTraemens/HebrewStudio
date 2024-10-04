@@ -4,7 +4,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
-@XmlRootElement(name = "WordData", namespace = "http://example.com/schema")  // Убедитесь, что имя совпадает
+//@XmlRootElement(name = "WordData", namespace = "http://example.com/schema")  // Убедитесь, что имя совпадает
+@XmlRootElement(name = "WordData")  // Убедитесь, что имя совпадает
 public class WordData {
 
     // Ваши поля с аннотациями
