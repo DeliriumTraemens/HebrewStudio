@@ -145,19 +145,19 @@ public class WordEntry {
     @Override
     public String toString() {
         return "\nWordEntry{" +
-                "ID=" + ID +
-                ", Skill='" + Skill + '\'' +
-                ", Word='" + Word + '\'' +
-                ", Translation='" + Translation + '\'' +
-                ", Type='" + Type + '\'' +
-                ", Niqqud='" + Niqqud + '\'' +
-                ", Transliteration='" + Transliteration + '\'' +
-                ", NewTranslit='" + NewTranslit + '\'' +
-                ", Gender='" + Gender + '\'' +
-                ", Form='" + Form + '\'' +
-                ", Number='" + Number + '\'' +
-                ", HasShva=" + HasShva +
-                ", Process='" + Process + '\'' +
+                "\nID=" + ID +
+                ", \nSkill='" + Skill + '\'' +
+                ", \nWord='" + Word + '\'' +
+                ", \nTranslation='" + Translation + '\'' +
+                ", \nType='" + Type + '\'' +
+                ", \nNiqqud='" + Niqqud + '\'' +
+                ", \nTransliteration='" + Transliteration + '\'' +
+                ", \nNewTranslit='" + NewTranslit + '\'' +
+                ", \nGender='" + Gender + '\'' +
+                ", \nForm='" + Form + '\'' +
+                ", \nNumber='" + Number + '\'' +
+                ", \nHasShva=" + HasShva +
+                ", \nProcess='" + Process + '\'' +
                 '}';
     }
 }

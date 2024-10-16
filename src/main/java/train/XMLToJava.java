@@ -4,6 +4,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
+import java.util.List;
 
 public class XMLToJava {
     public static void main(String[] args) {
@@ -23,9 +24,15 @@ public class XMLToJava {
 
             WordData word = (WordData) unmarshaller.unmarshal(xmlFile);
 //            HebrewWord word = (HebrewWord) unmarshaller.unmarshal(xmlFile);
+            List<WordEntry> entries = word.getEntries();
 
             // Вывод данных
-            System.out.println(word.toString());
+            for (WordEntry entry : entries) {
+                System.out.println("============"+"\n"+entry.toString());
+//                System.out.println(entry.getWord()+"\t "+entry.getTranslation());
+            }
+
+//            System.out.println(word.toString());
 //            System.out.println(unmarshaller.unmarshal(xmlFile).toString());
         } catch (JAXBException e) {
             e.printStackTrace();
